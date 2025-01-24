@@ -1,41 +1,136 @@
+/* Body Styling */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  line-height: 1.8;
+  background-color: #1a1a1a; /* Black background */
+  color: #eee; /* Light grey text for readability */
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Header Styling */
 header {
-  background: #333;
+  background: linear-gradient(to right, #2c2c2c, #4a4a4a); /* Dark gradient for header */
   color: #fff;
-  padding: 10px 0;
+  padding: 30px 0;
   text-align: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border-bottom: 5px solid #9b59b6; /* Purple accent */
 }
 
 header ul {
   list-style: none;
   padding: 0;
+  margin: 15px 0;
 }
 
 header ul li {
-  display: inline;
-  margin: 0 15px;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 header ul li a {
   color: #fff;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
 }
 
+header ul li a:hover {
+  color: #9b59b6; /* Purple color on hover */
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #9b59b6, 0 0 20px #9b59b6;
+}
+
+/* Section Styling */
 section {
-  padding: 20px;
-  margin: 10px;
+  padding: 50px;
+  margin: 30px auto;
+  max-width: 1200px;
+  background: #333; /* Dark grey background for sections */
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+section:hover {
+  transform: translateY(-8px); /* Lift effect */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Headings */
 h1, h2 {
   text-align: center;
+  margin-bottom: 30px;
+  color: #9b59b6; /* Purple color for headings */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-shadow: 0 4px 6px rgba(155, 89, 182, 0.3); /* Purple glow effect */
 }
 
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+/* Project Cards */
 .project {
+  margin-bottom: 30px;
+  padding: 30px;
+  background: #444; /* Dark grey background for cards */
+  border-left: 8px solid #9b59b6; /* Purple accent */
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+  transform: scale(1.05); /* Gentle zoom effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project h2 {
+  color: #9b59b6;
   margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.project p {
+  margin: 0;
+  color: #ddd; /* Light grey for description */
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to right, #222, #333); /* Dark footer background */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 5px solid #9b59b6; /* Purple accent */
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #9b59b6; /* Purple color for footer links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8); /* Glowing effect on hover */
 }
